@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRU Cafe ('w')</title>
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #f7f0e6; /* Light beige background */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgb(51, 17, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header-nav {
+            margin-top: 10px;
+        }
+
+        .header-nav-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .header-nav-list-item {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .header-nav-list-item-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .header-nav-list-item-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Section 1 Styles */
+        .section1 {
+            background-image: url('https://i.pinimg.com/originals/48/06/b6/4806b6a63717bbb9171cfe8442b5fdac.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            padding: 50px 0;
+            text-align: center;
+            color: #fff; /* White text color */
+        }
+
+        .section1-title {
+            font-family: Cursive;
+            font-size: 80px; /* Adjust the font size as needed */
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .section1-title2 {
+            font-size: 50px; /* Adjust the font size as needed */
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .section2-slider {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .glass.card {
+            background-color: rgba(255, 255, 255, 0.9); /* Opaque white background */
+            border: 2px solid #6d4c41; /* Brown border */
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            max-width: 300px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .glass.card:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .glass.card img {
+            max-width: 100%;
+        }
+
+        /* Color Theme */
+        h1, h2, h3, p {
+            color: #6d4c41; /* Brown text color */
+        }
+
+        a {
+            color: #f2d749; /* Yellow link color */
+        }
+
+        a:hover {
+            color: #ffd700; /* Yellow link color on hover */
+        }
+
+        /* Additional Styles for Input */
+        input[type="number"] {
+            border: 2px solid #6d4c41; /* Brown border */
+            padding: 5px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        input[type="number"]:focus {
+            border-color: #f2d749; /* Yellow border color on focus */
+        }
+
+        /* Button Styles */
+        .confirm-button {
+            background-color: #fff; /* Yellow background color */
+            color: #6d4c41; /* Brown text color */
+            border: none;
+            padding: 10px 20px;
+            font-size: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .confirm-button:hover {
+            background-color: #ffd700; /* Yellow background color on hover */
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        .header-gui-title {
+            color: #6d4c41; /* Brown text color */
+            border: 2px;
+            font-size: 50px;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="header-gui-title" style="color: #fff;">CRU Cafe \_('w')_/</h1> <!-- White text color -->
+    <nav class="header-nav">
+        <div class="container">
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item">
+                    <a href="#" class="header-nav-list-item-link nav-item-active">HOME</a>
+                </li>
+                <li class="header-nav-list-item">
+                    <a href="#" class="header-nav-list-item-link nav-item">ABOUT</a>
+                </li>
+                <li class="header-nav-list-item">
+                    <a href="#" class="header-nav-list-item-link nav-item">MENU</a>
+                </li>
+                <li class="header-nav-list-item">
+                    <a href="#" class="header-nav-list-item-link nav-item">BLOG</a>
+                </li>
+                <li class="header-nav-list-item">
+                    <a href="#" class="header-nav-list-item-link nav-item">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="section1">
+    <h2 class="section1-title">Choose what's right for you</h2>
+    <h1 class="section1-title2">MENU</h1>
+    <button type="submit" name="C" value="submit" class="confirm-button" >confirm</button>
+    <h3>    </h3>
+    <button type="reset" name="R" value="reset"class="confirm-button" >reset</button>
+    <div class="section2-slider">
+        <div class="glass card">
+            <img src="../static/Late-art.jpg" alt="">
+            <h1>ลาเต้ (Latte)</h1>
+            <p>
+                อีกหนึ่งเมนูกาแฟใส่นมที่ได้รับความนิยมเป็นอันดับ 1 จากรูปที่โพสลงอินสตราแกรมมากที่สุด เมนูกาแฟครองใจคนทั่วโลก ที่นอกเหนือจากรสชาตินมปนความหอมกรุ่นของกาแฟที่โดดเด่นแล้ว Latte Art หรือศิลปะจากฟองนมที่ลอยละมุนสร้างลวดลายอยู่บนชั้นนมของเครื่องดื่มร้อนรสนุ่มอย่างลาเต้ ก็เป็นส่วนสำคัญที่ทำให้เครื่องดื่มชนิดนี้ได้รับความนิยมจากคนไทยและคนทั่วโลกอย่างล้นหลาม
+            </p>
+            <h1>
+                <form action="/action_page.php">
+                    <label for="quantity">Price : 100 Bath per piece </label>
+                    <input type="number" name="Latte" value="Latte" min="0" class="input-style"> <!-- Added class for styling -->
+                </form>
+            </h1>
+        </div>
+        <div class="glass card">
+            <img src="../static/cappuccino.jpg" alt="">
+            <h1>คาปูชิโน (Cappuccino)</h1>
+            <p>
+                กาแฟสดใส่นมสดรสเข้มข้น
+                ในอัตราส่วน 1:1:1 (กาแฟ:นม:ฟองนม) 
+                ที่ทำให้คาปูชิโนมีรสชาติที่กลมกล่อม 
+                กาแฟเข้มละมุนกับนมและฟองนมในอัตราส่วนที่ลงตัว 
+                ด้วยรสชาติที่ลงตัวแบบนี้จึงเข้าไปครองใจคนไทยได้ไม่ยาก 
+                เหมาะสำหรับคอกาแฟที่ชื่นชอบกาแฟใส่นมที่ต้องการความเข้มข้นของกาแฟมากกว่าลาเต้
+            </p>
+            <h1>
+                <form action="/action_page.php">
+                    <label for="quantity">Price : 50 Bath per piece </label>
+                    <input type="number" name="Cappuccino" value="Cappuccino" min="0" class="input-style"> <!-- Added class for styling -->
+                </form>
+            </h1>
+        </div>
+        <div class="glass card">
+            <img src="../static/Mocha.jpg" alt="">
+            <h1>มอคค่า (Mocha)</h1>
+            <p>
+                เมนูกาแฟโดนใจคนรักพี่เสียดายน้องระหว่างกาแฟกับช็อกโกแลต กาแฟสดใส่นมที่ผสมช็อกโกแลตเพิ่มความเข้มข้นให้กับรสชาติที่หอมกรุ่นของกาแฟ เมนูกาแฟที่เด็กวัยรุ่นทานได้ผู้ใหญ่ก็ทานดี สำหรับเพิ่มความหวานคืนความสดชื่นระหว่างวัน ด้วยรสชาติที่สนุกไม่เหมือนการดื่มกาแฟจริงจัง จึงเป็นเหตุผลหนึ่งให้เมนูนี้ได้รับความนิยมเป็นอันดับต้นๆ
+            </p>
+            <h1>
+                <form action="/action_page.php">
+                    <label for="quantity">Price : 150 Bath per piece </label>
+                    <input type="number" name="Mocha" value="Mocha" min="0" class="input-style"> <!-- Added class for styling -->
+                </form>
+            </h1>
+        </div>
+        <div class="glass card">
+            <img src="../static/Americano.jpg" alt="">
+            <h1>อเมริกาโน (Americano)</h1>
+            <p>
+                เมนูกาแฟดำถูกใจคนรักกาแฟ ที่ต้องการดื่มด่ำรสกาแฟแบบไม่ปรุงแต่งใดๆ หรือเติมความหวานมากน้อยนั้นขึ้นอยู่กับความชอบของแต่ละคน เหมาะสำหรับคอกาแฟที่รักสุขภาพ ดื่มได้เรื่อยๆ ไม่ต้องกลัวอ้วน ไม่แปลกที่อเมริกาโนจะครองใจเมนูกาแฟโดนใจคนไทยได้ไม่ยาก
+            </p>
+            <h1>
+                <form action="/action_page.php">
+                    <label for="quantity">Price : 175 Bath per piece </label>
+                    <input type="number" name="Americano" value="Americano" min="0" class="input-style"> <!-- Added class for styling -->
+                </form>
+            </h1>
+        </div>
+        <div class="glass card">
+            <img src="../static/espress-shot.jpg" alt="">
+            <h1>เอสเพรสโซ่ (Espresso)</h1>
+            <p>
+                เมนูกาแฟดำถูกใจคนรักกาแฟ ที่ต้องการดื่มด่ำรสกาแฟแบบไม่ปรุงแต่งใดๆ หรือเติมความหวานมากน้อยนั้นขึ้นอยู่กับความชอบของแต่ละคน เหมาะสำหรับคอกาแฟที่รักสุขภาพ ดื่มได้เรื่อยๆ ไม่ต้องกลัวอ้วน ไม่แปลกที่อเมริกาโนจะครองใจเมนูกาแฟโดนใจคนไทยได้ไม่ยาก
+            </p>
+            <h1>
+                <form action="/action_page.php">
+                    <label for="quantity">Price : 199 Bath per piece </label>
+                    <input type="number" name="Espresso" value="Espresso" min="0" class="input-style"> <!-- Added class for styling -->
+                </form>
+            </h1>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
