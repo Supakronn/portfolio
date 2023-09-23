@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRU Cafe</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Reference your CSS file -->
+    <style>
+    body {
+        background-image: url('https://i.pinimg.com/originals/48/06/b6/4806b6a63717bbb9171cfe8442b5fdac.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    .main {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    hr {
+        border: 1px solid #000;
+        margin: 10px 0;
+    }
+
+    h2 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+        
+    .confirm-button {
+        background-color: #fff; /* Yellow background color */
+        color: #6d4c41; /* Brown text color */
+        border: none;s
+        padding: 10px 20px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    .confirm-button:hover {
+        background-color: rgb(500,500,500); /* Yellow background color on hover */
+        transform: scale(1.05); /* Scale up on hover */
+    }
+</style>
+
+</head>
+<body>
+    <div class="main">
+        <h1>RECEIPT</h1>
+        <hr>
+        <h1>User : {{name}}</h1>
+        <hr>
+        <h1>Ordered items</h1>
+
+        {% for item in order %}
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 style="margin-left: 10%;">{{item[0]}} : </h2>
+                <h2 style="margin-right: 10%;">{{item[1]}} Bath</h2>
+            </div>
+        {% endfor %}
+        <hr>
+        <h1 style="text-align: end;">Total : {{sumP}} Bath</h1>
+        <hr>
+        <button type="button" class="confirm-button">Back to Mainpage</button>
+    </div>
+</body>
+</html>
